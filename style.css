@@ -1,11 +1,35 @@
-body {margin: 0;padding: 0;font-family: sans-serif;}
-.header {background-color: white;/* height: 50px; */padding: 10px 20px;font-size: 15px;}
+@font-face {
+    font-family: 'Berlin Sans FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Bold'), url('BRLNSB.woff') format('woff');
+}
+@font-face {
+    font-family: 'Berlin Sans FB';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB'), url('BRLNSR.woff') format('woff');
+}
+ @font-face {
+    font-family: 'FreeSans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FreeSans Medium'), url('FreeSans.woff') format('woff');
+}
+.bgYellow { background-color: #F4ad03; }
+.bgBlue { background-color: #07adbd; }
+.bgRed { background-color: #e22211; }
+.bgBrown { background-color: #250401; }
+.firstFont { font-family: 'Berlin Sans FB', sans-serif; }
+.secondFont { font-family: 'FreeSans Medium' }
+body {margin: 0;padding: 0;font-family: 'Berlin Sans FB', sans-serif; color: #f3f2de;}
+.header {background-color: #F4ad03;/* height: 50px; */padding: 10px 20px;font-size: 15px;color: #f3f2de;}
 .flex { display: flex; }
 .flex1 { flex: 1; }
-.header .name {font-weight: 600;margin: 0;cursor: initial;}
+.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(logo.png);/* width: 50px; */height: 25px;background-size: contain;background-repeat: no-repeat;}
 .header span {margin: 0px 10px;line-height: 28px;cursor: pointer;}
-.header button {padding: 5px 10px;margin-left: 10px;background: white;cursor: pointer;}
-.bgBlack {background-color: black;height: 325px;color: white;margin: 0 auto;text-align: center;padding: 80px 40px 0 40px;font-size: 24px;}
+.header button {padding: 5px 10px;margin-left: 10px;background: #f3f2de;cursor: pointer;border: 1px solid #00000000;border-radius: 5px;background-color: #e22211;color: #f3f2de;}
+.bgBlack {/* background-color: black; */height: 325px;color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 0 40px;font-size: 24px;}
 .bgBlack .title {
     line-height: 30px;
 }
@@ -17,29 +41,30 @@ body {margin: 0;padding: 0;font-family: sans-serif;}
 .video {
     margin-top: 30px;
 }
-.reserve {background-color: #f2f2f2;padding: 100px;padding-top: 185px;text-align: center;}
+.reserve {/* background-color: #f2f2f2; */padding: 100px;padding-top: 185px;text-align: center;color: #f3f2de;}
 .reserve .title, .title {
     font-weight: 700;
     font-size: 18px;
 }
-.calendy {background-color: black;color: white;font-size: 13px;padding: 181px 45px;margin: 40px;}
+.calendy {background-color: black;color: #f3f2de;font-size: 13px;padding: 181px 45px;margin: 40px;}
 .partner {
     margin-top: 70px;
     font-size: 13px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .round {background-color: black;width: 35px;height: 35px;display: inline-block;border-radius: 100%;margin: 10px 10px;}
 .aboutUs {
     padding-bottom: 50px;
+    color: #f3f2de;
 }
 .aboutUs .title {
     text-align: center;
-    margin: 50px;
+    padding: 50px;
 }
 .aboutUs .image {
     background: black;
     height: 300px;
-    background: url(https://thumbs.dreamstime.com/b/business-man-standing-confident-smile-portrait-successful-suit-smiling-proud-outdoors-44304293.jpg);
+    background: url(aboutUs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -54,15 +79,15 @@ body {margin: 0;padding: 0;font-family: sans-serif;}
     font-size: 14px;
 }
 .aboutus button {
-    color: white;
-    background: black;
+    color: #f3f2de;
+    /* background: black; */
     padding: 20px 40px;
     border-radius: 5px;
 }
 .aboutus .footer {
     font-size: 12px;
     text-align: center;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 50px;
 }
 .footer .round {
@@ -75,23 +100,27 @@ body {margin: 0;padding: 0;font-family: sans-serif;}
     font-weight: 500;
 }
 button { cursor: pointer; }
-.partners { background-color: #f2f2f2; padding: 50px; }
+.partners {/* background-color: #f2f2f2; */padding: 50px;color: #f3f2de;}
 .iPartner {
-    border: 2px solid #949494;
+    /* border: 2px solid #949494; */
     display: inline-block;
     padding: 20px 40px;
     border-radius: 5px;
     font-size: 12px;
+    background: #07adbd;
+    /* color: black; */
 }
 .partners .bold {
     font-size: 15px;
     width: 50%;
     margin-left: 45px;
+    margin-top: 5px;
+    font-weight: 200;
 }
 .links {
     border-bottom: 2px solid #6b6b6b;
     padding-bottom: 7px;
-    font-weight: 600;
+    /* font-weight: 600; */
     font-size: 10px;
     margin-bottom: 25px;
 }
