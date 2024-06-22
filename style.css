@@ -1,7 +1,31 @@
-body {background-color: black;margin: 0;padding: 0;font-family: sans-serif;}
+body {margin: 0;padding: 0;font-family: sans-serif;}
 .header {background-color: white;/* height: 50px; */padding: 10px 20px;font-size: 15px;}
 .flex { display: flex; }
 .flex1 { flex: 1; }
 .header .name {font-weight: 600;margin: 0;cursor: initial;}
 .header span {margin: 0px 10px;line-height: 28px;cursor: pointer;}
 .header button {padding: 5px 10px;margin-left: 10px;background: white;cursor: pointer;}
+.bgBlack {background-color: black;height: 325px;color: white;margin: 0 auto;text-align: center;padding: 80px 40px 0 40px;font-size: 24px;}
+.bgBlack .title {
+    line-height: 30px;
+}
+.bgBlack .subtitle {
+    font-size: 14px;
+    opacity: 80%;
+    margin-top: 7px;
+}
+.video {
+    margin-top: 30px;
+}
+.reserve {background-color: #f2f2f2;padding: 100px;padding-top: 185px;text-align: center;}
+.reserve .title {
+    font-weight: 700;
+    font-size: 18px;
+}
+.calendy {background-color: black;color: white;font-size: 13px;padding: 181px 45px;margin: 40px;}
+.partner {
+    margin-top: 70px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.round {background-color: black;width: 35px;height: 35px;display: inline-block;border-radius: 100%;margin: 10px 10px;}
