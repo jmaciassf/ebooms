@@ -40,7 +40,8 @@ body {margin: 0;padding: 0;font-family: sans-serif;}
     background: black;
     height: 300px;
     background: url(https://thumbs.dreamstime.com/b/business-man-standing-confident-smile-portrait-successful-suit-smiling-proud-outdoors-44304293.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .aboutus .subtitle {font-size: 14px;font-weight: 600;}
 .aboutus .content {
