@@ -18,18 +18,20 @@
 }
 .bgYellow { background-color: #F4ad03; }
 .bgBlue { background-color: #07adbd; }
-.bgRed { background-color: #e22211; }
+.bgRed {/* background-color: #e22211; */color: black !important;background-color: #d2d2d2;}
 .bgBrown { background-color: #250401; }
 .firstFont { font-family: 'Berlin Sans FB', sans-serif; }
 .secondFont { font-family: 'FreeSans Medium' }
-body {margin: 0;padding: 0;font-family: 'Berlin Sans FB', sans-serif; color: #f3f2de;}
-.header {background-color: #F4ad03;/* height: 50px; */padding: 10px 20px;font-size: 15px;color: #f3f2de;}
+body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color: #f3f2de;font-family: Arial;}
+.header {background-color: white;/* height: 50px; */padding: 10px 20px;font-size: 15px;color: black;}
 .flex { display: flex; }
 .flex1 { flex: 1; }
-.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(logo.png);/* width: 50px; */height: 25px;background-size: contain;background-repeat: no-repeat;}
-.header span {margin: 0px 10px;line-height: 28px;cursor: pointer;}
-.header button {padding: 5px 10px;margin-left: 10px;background: #f3f2de;cursor: pointer;border: 1px solid #00000000;border-radius: 5px;background-color: #e22211;color: #f3f2de;}
-.bgBlack {/* background-color: black; */height: 325px;color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 0 40px;font-size: 24px;}
+.flex2 { flex: 2; }
+.flex3 { flex: 3; }
+.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(logo.png);/* width: 50px; */height: 30px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;}
+.header span {margin: 0px 10px;line-height: 65px;cursor: pointer;height: 47px;}
+.btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 16px;}
+.bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;font-size: 24px;}
 .bgBlack .title {
     line-height: 30px;
 }
@@ -40,13 +42,16 @@ body {margin: 0;padding: 0;font-family: 'Berlin Sans FB', sans-serif; color: #f3
 }
 .video {
     margin-top: 30px;
+    border-radius: 50px;
+    width: 650px;
+    height: 400px;
 }
-.reserve {/* background-color: #f2f2f2; */padding: 100px;padding-top: 185px;text-align: center;color: #f3f2de;}
+.reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;}
 .reserve .title, .title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
 }
-.calendy {background-color: black;color: #f3f2de;font-size: 13px;padding: 181px 45px;margin: 40px;}
+.calendy {/* background-color: black; *//* color: #f3f2de; *//* font-size: 13px; *//* padding: 181px 45px; */margin: 20px 0px;border-radius: 20px;}
 .partner {
     margin-top: 70px;
     font-size: 13px;
@@ -150,4 +155,109 @@ button { cursor: pointer; }
     margin: 3px;
     height: 20px;
     width: 20px;
+}
+.warning {background-color: #F4ad03;color: black;padding: 10px 30px;text-align: center;font-size: 13px;}
+.close {
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    float: right;
+    top: 7px;
+    position: absolute;
+    right: 7px;
+    font-size: 20px !important;
+}
+.divIcoPhone {bottom: 10px;top: auto;position: fixed;/* height: 20px; */border: none;/* width: 20px; */padding: 7px;border-radius: 100%;font-size: 20px !important;box-shadow: -2px 0px 10px -2px #ff040440;right: 10px;/* bottom: 0; *//* background-color: #e34c0d; *//* border: 1px solid #ebe2d296; */cursor: pointer;}
+.icoPhone {border: 1px solid white;border-radius: 100%;padding: 10px;}
+.whiteBorder {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    top: 10px;
+    left: 11px;
+}
+.header .link {
+    border-bottom: 1px solid transparent;
+    transition: 1.5s;
+}
+.header .link:beforex {
+    content: "aasdfasdf";
+    left: 90px;
+    bottom: -6px;
+    height: 2px;
+    width: 57%;  /* or 100px */
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    width: 20px;
+    color: transparent;
+  }
+.header .link:hover {border-bottom: 1px solid #c0c0c0ab;}
+         
+.btnGradient {
+    background-image: linear-gradient(to right, #E22211 0%, #EDDE5D  71%, #F4AD03 100%);
+    margin: 10px;
+    /* padding: 15px 45px; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 4px #eee;
+    /* border-radius: 10px; */
+    display: block;
+    background-image: linear-gradient(to right, #E22211 -18%, #E7AD03 62%, #F4AD03 100%);
+  }
+
+  .btnGradient:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    /* background-position: bottom; */
+    background-color: red;
+    background-image: linear-gradient(to right, #E22211 0%, #E22211 55%, #E22211 100%);
+    /* background-image: linear-gradient(to right, #E22211 0%, #EDDE5D  146%, #F4AD03 100%); */
+    /* transition: 2s; */
+    /* background-position: left; */
+    background-image: linear-gradient(to right, #ff0000 0%, #f4a000 23%, red 100%);
+  }
+ 
+.section1 {}
+.section1 .left {
+    vertical-align: bottom;
+    height: 300px;
+    margin-top: 115px;
+}
+.section1 .title {
+    text-align: left;
+}
+.section1 button {width: 90%;}
+.calendy iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 27px;
+    border: none;
+    box-shadow: 0px 0px 23px 0px #9356e1;
+    /* height: 100%; */
+    overflow: auto;
+    overflow-clip-margin: inherit;
+}
+.shadowBorder {
+    border-bottom: 1px solid #dddddd;
+    color: transparent;
+    position: relative;
+    left: 151px;
+    transition: 0s;
+    padding: 0 18px;
+    /* float: right; */
+    height: 5px !important;
+    z-index: 0;
+    top: 42px;
+ }
+ .shadow2 {
+    left: 222px;
 }

@@ -1,24 +1,42 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css?v=2">
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
     <body>
+        <div class="warning">
+            El Programa Ebooms no está abierto al público y sólo se puede acceder por invitación. Agenda una llamada aquí para ver si eres apto.
+            <span class="material-symbols-outlined close">
+                close
+            </span>
+        </div>
        <div class="header flex">
         <span class="name flex1"></span>
-        <span>Nuestro Proceso</span>
-        <span>Sobre Nosotros</span>
-        <button class="firstFont">Agenda Demo</button>
+        <span class="shadowBorder shadow1"></span>
+        <span class="shadowBorder shadow2"></span>
+        <span class="link">Nuestro Proceso</span>
+        <span class="link">Sobre Nosotros</span>
+        <button class="firstFont btnGradient">Agenda tu llamada</button>
        </div> 
 
-        <div class="bgBlack bgRed">
-            <div class="title">LA FÓRMULA GARANTIZADA DE 3 PASOS PARA ESCALAR UNA MARCA DE COSMÉTICA A 7/8 CIFRAS EN 2024</div>
-            <div class="subtitle">SIN TENER QUE DEPENDER DE FACEBOOK ADS, AGENCIAS O INFLUENCERS</div>
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/VGa1imApfdg?si=4htYw8G96oYZtL4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Section 1 -->
+        <div class="bgBlack bgRed flex section1">
+            <div class="flex1 left">
+                <div class="title">El método de 3 pasos para duplicar las ventas de E-commerce en 90 días sin invertir millones en publicidad.</div>
+                <button class="firstFont btnGradient">Agenda aquí tu llamada</button>
+            </div>
+            <div class="flex3">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/VGa1imApfdg?si=4htYw8G96oYZtL4E&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="reserve bgBlue">
             <div class="title">RESERVA UNA HORA ABAJO</div>
-            <div class="calendy">AÑADIR EVENTO DE CALENDY AQUÍ CON LAS PREGUNTAS</div>
+            <div class="calendy">
+                <iframe src="https://calendly.com/joshuasanchez-ebooms/llamada-demo?month=2024-07"></iframe>
+            </div>
             <div class="partner">
                 <div>EL GROWTH PARTNER DE CONFIANZA PARA:</div>
                 <div class="icons">
@@ -81,6 +99,10 @@
                 </div>
                 <div class="years">© 2010 - 2024 &nbsp;&nbsp; Privacy - Terms</div>
             </div>
+        </div>
+
+        <div class="divIcoPhone btnGradient">
+            <span class="material-symbols-outlined icoPhone">call</span>
         </div>
     </body>
 </html>
