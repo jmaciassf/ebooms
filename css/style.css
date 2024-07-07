@@ -260,6 +260,11 @@ button { cursor: pointer; }
 .section2 p {
     margin: 0;
 }
+.section2 button {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: block;
+}
 .calendy iframe {
     width: 100%;
     height: 500px;
@@ -327,4 +332,41 @@ button { cursor: pointer; }
 .iconsSteps i:hover {
     filter: drop-shadow(10px 10px 32px #ddd);
     /* filter: unset; */
+}
+.steps {
+    padding: 20px 85px;
+}
+.steps .step {}
+.steps .step .left {
+    border-radius: 20px 0 0  20px;
+    text-align: right;
+}
+.steps .step .right {
+    border-radius: 0 20px 20px 0;
+    text-align: left;
+}
+.step1 .background {
+    background-image: url(../images/brown.png);
+    background-size: cover;
+    color: white;
+}
+.step1 .title {
+    color: #f3ac13;
+    text-align: left;
+    position: relative;
+    top: 2px;
+    left: 50px;
+}
+.step .bgGray {
+    background-color: #e3e3e3;
+}
+.step .box {
+    border-radius: 20px;
+    border: 1px solid #bbbbbb;
+    font-weight: 500;
+    font-size: 13px;
+    /* height: 200px; */
+}
+.step .box div {
+    padding: 50px;
 }
