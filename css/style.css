@@ -18,20 +18,20 @@
 }
 .bgYellow { background-color: #F4ad03; }
 .bgBlue { background-color: #07adbd; }
-.bgRed {/* background-color: #e22211; */color: black !important;background-color: #d2d2d2;}
+.bgRed {background-color: #e22211;color: black !important;}
 .bgBrown { background-color: #250401; }
 .firstFont { font-family: 'Berlin Sans FB', sans-serif; }
 .secondFont { font-family: 'FreeSans Medium' }
-body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color: #f3f2de;font-family: Arial;}
-.header {background-color: white;/* height: 50px; */padding: 10px 20px;font-size: 15px;color: black;}
-.flex { display: flex; }
+body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color: #f3f2de;font-family: Arial;background-color: #dbdad9;}
+.header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 15px;color: black;/* position: fixed; *//* width: 100%; */}
+.flex {display: flex;}
 .flex1 { flex: 1; }
 .flex2 { flex: 2; }
 .flex3 { flex: 3; }
-.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(logo.png);/* width: 50px; */height: 30px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;}
+.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
 .header span {margin: 0px 10px;line-height: 65px;cursor: pointer;height: 47px;}
 .btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 16px;}
-.bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;font-size: 24px;}
+.bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;/* font-size: 24px; */}
 .bgBlack .title {
     line-height: 30px;
 }
@@ -45,6 +45,7 @@ body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color
     border-radius: 50px;
     width: 650px;
     height: 400px;
+    max-width: 85%;
 }
 .reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;}
 .reserve .title, .title {
@@ -69,7 +70,7 @@ body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color
 .aboutUs .image {
     background: black;
     height: 300px;
-    background: url(aboutUs.jpg);
+    background: url(../images/aboutUs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -105,7 +106,7 @@ body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color
     font-weight: 500;
 }
 button { cursor: pointer; }
-.partners {/* background-color: #f2f2f2; */padding: 50px;color: #f3f2de;}
+.partners {/* background-color: #f2f2f2; */padding: 50px;color: black;background-color: white;}
 .iPartner {
     /* border: 2px solid #949494; */
     display: inline-block;
@@ -169,7 +170,7 @@ button { cursor: pointer; }
     right: 7px;
     font-size: 20px !important;
 }
-.divIcoPhone {bottom: 10px;top: auto;position: fixed;/* height: 20px; */border: none;/* width: 20px; */padding: 7px;border-radius: 100%;font-size: 20px !important;box-shadow: -2px 0px 10px -2px #ff040440;right: 10px;/* bottom: 0; *//* background-color: #e34c0d; *//* border: 1px solid #ebe2d296; */cursor: pointer;}
+.divIcoPhone {bottom: 10px;top: auto;position: fixed;/* height: 20px; */border: none;/* width: 20px; */padding: 7px;border-radius: 100%;font-size: 20px !important;box-shadow: -2px 0px 10px -2px #ff040440;right: 10px;/* bottom: 0; *//* background-color: #e34c0d; *//* border: 1px solid #ebe2d296; */cursor: pointer;background: url("../images/icoPhone.png");width: 40px;height: 40px;background-size: contain;transition: 1s;}
 .icoPhone {border: 1px solid white;border-radius: 100%;padding: 10px;}
 .whiteBorder {
     border: 1px solid white;
@@ -226,16 +227,39 @@ button { cursor: pointer; }
     background-image: linear-gradient(to right, #ff0000 0%, #f4a000 23%, red 100%);
   }
  
-.section1 {}
+.section1 {
+    padding: 130px 0px 15px 40px;
+    background-image: url("../images/background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: auto; */
+    color: black;
+    background-color: #d2d2d2;
+    margin: 0 auto;
+    text-align: center;
+}
 .section1 .left {
-    vertical-align: bottom;
-    height: 300px;
+    /* vertical-align: bottom; */
+    /* height: 300px; */
     margin-top: 115px;
 }
 .section1 .title {
     text-align: left;
 }
 .section1 button {width: 90%;}
+.section2 {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.section2 p {
+    margin: 0;
+}
 .calendy iframe {
     width: 100%;
     height: 500px;
@@ -245,6 +269,7 @@ button { cursor: pointer; }
     /* height: 100%; */
     overflow: auto;
     overflow-clip-margin: inherit;
+    /* overflow: hidden; */
 }
 .shadowBorder {
     border-bottom: 1px solid #dddddd;
@@ -260,4 +285,46 @@ button { cursor: pointer; }
  }
  .shadow2 {
     left: 222px;
+}
+.topFixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.divLogo {
+    /* margin-right: 35px; */
+    flex: 1;
+}
+.header .btnGradient {
+    margin-right: 0;
+}
+.hide { display: none; }
+.divIcoPhone:hover {
+    filter: brightness(1.3);
+}
+.section1 .line2 {
+    color: #8f8f8f;
+    font-weight: 800;
+    font-size: 13px;
+    margin-top: 80px;
+    text-align: center;
+}
+.section1 .line2 .image {height: 52px;display: inline-block;/* max-width: 112px; */width: 147px;background-repeat: no-repeat;background-size: contain;position: relative;margin: 0 20px;}
+#imgAgefit {background-image: url("../images/AGEFIT.png");margin: 0;}
+#imgDPM {background-image: url("../images/AGEFIT.png");margin: 0;}
+#imgMaitacon {background-image: url("../images/MAITACON.png");margin-top: 10px;height: 22px;width: 150px;top: -12px;}
+#imgFoton {background-image: url("../images/FOTON2.png");height: 50px;width: 150px;}
+.section1 .line2 .image:first-child { margin-left: 0; }
+.section1 .line2 .image:last-child { margin-right: 0; }
+.titleYellow {
+    color: #f3ac13;
+    font-size: 22px;
+    margin-top: 3px !important;
+    /* font-weight: 700; */
+}
+.iconsSteps {margin-top: 50px;margin-bottom: 50px;}
+.iconsSteps i {border: 1px solid #b5b5b536;border-radius: 45%;padding: 40px 35px;box-shadow: -2px 8px 14px -8px #676767;margin: -2px;font-style: normal;font-size: 20px;background-color: #e3e3e3;cursor: pointer;}
+.iconsSteps i:hover {
+    filter: drop-shadow(10px 10px 32px #ddd);
+    /* filter: unset; */
 }
