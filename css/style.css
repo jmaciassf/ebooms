@@ -427,7 +427,7 @@ button { cursor: pointer; }
 }
 .step .box div {
     padding: 50px;
-    /* transition: 1s; */
+    transition: 0.3s;
     /* border: 1px solid #d7d7d7; */
     /* filter: drop-shadow(2px 4px 6px black); */
 }

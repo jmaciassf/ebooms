@@ -24,11 +24,11 @@ $(document).ready(function(){
 
     $(".step .box").hover(function(){
         $(this).addClass("hover");
-        //setTimeout(function(){ resize(); }, 600);
+        setTimeout(function(){ resize(); }, 300);
         resize();
     }, function() {
         $(this).removeClass("hover");
-        //setTimeout(function(){ resize(); }, 600);
+        setTimeout(function(){ resize(); }, 300);
         resize();
     });
 
