@@ -1,41 +1,33 @@
 :root {
   --yellow-color: #F4ad03;
 }
-@font-face {
-    font-family: 'Berlin Sans FB Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB Bold'), url('BRLNSB.woff') format('woff');
-}
-@font-face {
-    font-family: 'Berlin Sans FB';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Berlin Sans FB'), url('BRLNSR.woff') format('woff');
-}
- @font-face {
-    font-family: 'FreeSans Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('FreeSans Medium'), url('FreeSans.woff') format('woff');
-}
 .bgYellow { background-color: var(--yellow-color); }
 .bgWhite { background-color: white; }
 .bgBlue { background-color: #07adbd; }
 .bgRed {background-color: #e22211;color: black !important;}
 .bgBrown { background-color: #250401; }
-.firstFont { font-family: 'Berlin Sans FB', sans-serif; }
-.secondFont { font-family: 'FreeSans Medium' }
-body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color: #f3f2de;font-family: Arial;background-color: #dbdad9;user-select: none;/* display: none; */}
-.header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 15px;color: black;/* position: fixed; *//* width: 100%; */}
+body {
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     margin: 0;
+     padding: 0;
+     /* font-family: 'Berlin Sans FB', sans-serif; */
+     color: #f3f2de;
+     /* font-family: Arial; */
+     background-color: #dbdad9;
+     user-select: none;
+     /* display: none; */
+     }
+.header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 13px;color: black;/* position: fixed; *//* width: 100%; */}
 .flex {display: flex;}
 .flex1 { flex: 1; }
 .flex2 { flex: 2; }
 .flex3 { flex: 3; }
 .section1 .flex3 { display: none; }
 .header .name {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
-.header span {margin: 0px 10px;line-height: 65px;cursor: pointer;height: 47px;}
-.btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 16px;}
+.header span {margin: 0px 10px;line-height: 61px;cursor: pointer;height: 30px;font-weight: 700;}
+.btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 13px;font-weight: 600;}
 .bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;/* font-size: 24px; */}
 .bgBlack .title {
     line-height: 30px;
@@ -54,7 +46,7 @@ body {margin: 0;padding: 0;/* font-family: 'Berlin Sans FB', sans-serif; */color
 }
 .reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;display: none;margin: 20px;border-radius: 15px;}
 .reserve .title, .title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
 }
 .reserve .title {
@@ -173,7 +165,7 @@ button { cursor: pointer; }
     height: 20px;
     width: 20px;
 }
-.warning {background-color: #F4ad03;background-color: var(--yellow-color);color: black;padding: 10px 30px;text-align: center;font-size: 13px;}
+.warning {background-color: #F4ad03;background-color: var(--yellow-color);color: black;padding: 10px 30px;text-align: center;font-size: 12px;}
 .close {
     cursor: pointer;
     border-radius: 25px;
@@ -265,8 +257,11 @@ button { cursor: pointer; }
 }
 .section1 .title {
     text-align: left;
+    line-height: 28px;
 }
-.section1 button {width: 90%;}
+.section1 button {}
+.section1 button, .btnLarge 
+{width: 100%;margin-left: 0;max-width: 200px;margin: 20px auto;}
 .section2 {
     background-color: white;
     padding: 25px;
@@ -280,6 +275,7 @@ button { cursor: pointer; }
 }
 .section2 p {
     margin: 0;
+    margin-bottom: 2px;
 }
 .section2 button {
     margin: 0 auto;
@@ -330,8 +326,8 @@ button { cursor: pointer; }
 }
 .section1 .line2 {
     color: #8f8f8f;
-    font-weight: 800;
-    font-size: 13px;
+    font-weight: 600;
+    font-size: 14px;
     margin-top: 80px;
     display: none;
     text-align: center;
@@ -370,6 +366,13 @@ button { cursor: pointer; }
 .steps .step .hover div {
     padding: 75px 50px;
 }
+.step .icon {background-repeat: no-repeat;background-size: contain;width: 12px;height: 12px;display: inline-block;margin-right: 5px;}
+.icon.users {background-image: url(../images/users.png);}
+.icon.chains {background-image: url(../images/chain.png);}
+.icon.star {background-image: url(../images/star.png);}
+.icon.graph {background-image: url(../images/graph.png);}
+.icon.email {background-image: url(../images/email.png);}
+.icon.hands {background-image: url(../images/hands.png);}
 .step1 .hover .bomb {  }
 .steps .step .right {
     border-radius: 0 20px 20px 0;
@@ -428,6 +431,7 @@ button { cursor: pointer; }
     /* border: 1px solid #d7d7d7; */
     /* filter: drop-shadow(2px 4px 6px black); */
 }
-.step .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 20px);z-index: 1;}
+.step .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 20px);z-index: 1;transition: 2s;}
 .step1 .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: -45deg;position: absolute;left: calc(50% - 32px);/* margin-top: 7%; *//* top: 42px; *//* padding-top: 25px; *//* transition: 0.5s; */}
 .step2 .bomb {background-image: url(../images/blackBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 18px);}
+.step3 .bomb {background-image: url(../images/redBomb.png);rotate: -45deg;left: calc(50% - 32px);}
