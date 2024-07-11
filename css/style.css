@@ -115,7 +115,7 @@ body {
     background-size: 500px;
     background-color: #dbdad9 !important;
     background-position: 110% -235px;
-    /* transition: 10s; */
+    transition: 10s;
 }
 .aboutUs.moveBG { background-position: -289px 172px; }
 .aboutUs .title {
