@@ -45,6 +45,7 @@ $(document).ready(function(){
     });
 
     startCarousel();
+    startAnimationBackground();
     resize();
 });
 
@@ -56,7 +57,6 @@ let carouselInterval;
 function startCarousel(){
     let stepIndex = 0;
     carouselInterval = setInterval(function(){
-        console.log("interval");
         // Ir al siguiente paso
         stepIndex++;
         if(stepIndex == 4) stepIndex = 1;
@@ -65,6 +65,19 @@ function startCarousel(){
 }
 function stopCarousel(){
     clearInterval(carouselInterval);
+}
+
+function startAnimationBackground(){
+    changeBG();
+    setInterval(function(){
+        changeBG();
+    }, 12000);
+}
+function changeBG(){
+    $(".aboutUs").addClass("moveBG");
+    setTimeout(function(){
+        $(".aboutUs").removeClass("moveBG");
+    }, 5000);
 }
 
 function resize() {    
