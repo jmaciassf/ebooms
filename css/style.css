@@ -511,10 +511,10 @@ body > .footer p {}
 }
 
 .steps .step.exit {
-    left: -1500px !important;
+    /* left: -1500px !important; */
 }
-.steps .step.hide {display: inline-block;left: 1500px;position: absolute;/* display: none; */}
-.steps .step.active { left: 0; }
+.steps .step.hide {display: inline-block;/* left: 1500px; */position: absolute;/* display: none; */}
+.steps .step.active {left: 0;opacity: 1;}
 .steps .step {
     /* display: inline-block; */
     position: relative;
@@ -523,8 +523,9 @@ body > .footer p {}
     height: 200px;
     left: 0;
     transition: 1s;
-    left: 1500px;
+    /* left: 1500px; */
     height: auto;
+    opacity: 0;
 }
 .steps .step .left {
     border-radius: 20px 0 0  20px;
