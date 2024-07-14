@@ -122,53 +122,55 @@ function resize() {
     
 }
 
-$(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    if(scrollTop > positions.aboutUs)
-    {
-        // Show reserve
-        if(!$(".divAboutUs").hasClass("show")){
-            $(".divAboutUs").addClass("show");
+if(!window.navigator.userAgentData.mobile){
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop > positions.aboutUs)
+        {
+            // Show reserve
+            if(!$(".divAboutUs").hasClass("show")){
+                $(".divAboutUs").addClass("show");
+            }
+            hideSection2();
         }
-        hideSection2();
-    }
-    else if(scrollTop > positions.reserve)
-    {
-        // Show reserve
-        if(!$(".divReserve").hasClass("show")){
-            $(".divReserve").addClass("show");
+        else if(scrollTop > positions.reserve)
+        {
+            // Show reserve
+            if(!$(".divReserve").hasClass("show")){
+                $(".divReserve").addClass("show");
+            }
         }
-    }
-    else if(scrollTop > positions.section2)
-    {
-        // Show section2
-        if(!$(".divSection2").hasClass("show")){
-            $(".divSection2").addClass("show");
-            startCarousel();
+        else if(scrollTop > positions.section2)
+        {
+            // Show section2
+            if(!$(".divSection2").hasClass("show")){
+                $(".divSection2").addClass("show");
+                startCarousel();
+            }
+            hideAboutUs();
         }
-        hideAboutUs();
-    }
-    else 
-    {
-        hideSection2();
-        if($(".divReserve").hasClass("show")){
-            $(".divReserve").removeClass("show");
+        else 
+        {
+            hideSection2();
+            if($(".divReserve").hasClass("show")){
+                $(".divReserve").removeClass("show");
+            }
+            hideAboutUs();
         }
-        hideAboutUs();
-    }
-
-    function hideSection2() {
-        if($(".divSection2").hasClass("show")){
-            $(".divSection2").removeClass("show");
-            stopCarousel();
+    
+        function hideSection2() {
+            if($(".divSection2").hasClass("show")){
+                $(".divSection2").removeClass("show");
+                stopCarousel();
+            }
         }
-    }
-    function hideAboutUs() {
-        if($(".divAboutUs").hasClass("show")){
-            $(".divAboutUs").removeClass("show");
+        function hideAboutUs() {
+            if($(".divAboutUs").hasClass("show")){
+                $(".divAboutUs").removeClass("show");
+            }
         }
-    }
-});
+    });
+}
 
 function call(){
     window.open("https://calendly.com/joshuasanchez-ebooms/llamada-demo?month=2024-07");

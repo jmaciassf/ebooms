@@ -618,7 +618,7 @@ body > .footer p {}
     /* border: 1px solid #d7d7d7; */
     /* filter: drop-shadow(2px 4px 6px black); */
 }
-.step .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 20px);z-index: 1;transition: 2s;}
+.step .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 20px);z-index: 1;/* transition: 2s; */}
 .step1 .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: -45deg;position: absolute;left: calc(50% - 32px);/* margin-top: 7%; *//* top: 42px; *//* padding-top: 25px; *//* transition: 0.5s; */}
 .step2 .bomb {background-image: url(../images/blackBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 18px);}
 .step3 .bomb {background-image: url(../images/redBomb.png);rotate: -45deg;left: calc(50% - 32px);}
