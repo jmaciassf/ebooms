@@ -36,16 +36,22 @@ $(document).ready(function(){
        console.log("click");
 
         let step = $(this).attr("step");
-        $(".steps .step").addClass("hide");
-        $(".steps .step"+step).removeClass("hide");
-        resize();
-
+        if(!$(".steps .step"+step).hasClass("active")){
+            $(".steps .step.active").addClass("exit");
+            setTimeout(function(){
+                $(".steps .step").addClass("hide").removeClass("exit active").hide();
+                $(".steps .step"+step).removeClass("hide").show().addClass("active");
+                resize();
+            }, 500);
+        }
+        
         if(event && event.type)
             stopCarousel();
     });
 
     startCarousel();
-    startAnimationBackground();
+    //startAnimationBackground();
+    startNumbers();
     resize();
 });
 
@@ -56,12 +62,16 @@ $(window).on("resize", function() {
 let carouselInterval;
 function startCarousel(){
     let stepIndex = 0;
+    start();
     carouselInterval = setInterval(function(){
+        start();
+    }, 5000);
+    function start(){
         // Ir al siguiente paso
         stepIndex++;
         if(stepIndex == 4) stepIndex = 1;
         $(".iconsSteps i[step="+stepIndex+"]").click();
-    }, 3000);
+    }
 }
 function stopCarousel(){
     clearInterval(carouselInterval);
@@ -80,10 +90,27 @@ function changeBG(){
     }, 5000);
 }
 
+// About us numbers
+function startNumbers(){
+    let index = -1;
+    changeNumbers();
+    setInterval(function(){
+        changeNumbers();
+    }, 3000);
+    function changeNumbers(){
+        // Ir al siguiente numero
+        index++;
+        if(index == 4) index = 0;
+        $(".aboutus .numbers .content").hide();
+        $(".aboutus .numbers .content").eq(index).fadeIn();
+    }
+}
+
 function resize() {    
     $(".step1 .bomb").css("marginTop", $(".step1 .box").height() / 2 - 30);
     $(".step2 .bomb").css("marginTop", $(".step2 .box").height() / 2 - 30);
     $(".step3 .bomb").css("marginTop", $(".step3 .box").height() / 2 - 30);
+    //$(".steps").css("marginBottom", $(".step3 .box").height() / 2 - 30);
 }
 
 function call(){

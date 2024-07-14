@@ -15,9 +15,11 @@ body {
      /* font-family: 'Berlin Sans FB', sans-serif; */
      color: #f3f2de;
      /* font-family: Arial; */
-     background-color: #dbdad9;
+     /* background-color: #dbdad9; */
      user-select: none;
      /* display: none; */
+     overflow-x: hidden;
+     /* display: block; */
      }
 .header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 13px;color: black;/* position: fixed; *//* width: 100%; */}
 .flex {display: flex;}
@@ -44,7 +46,7 @@ body {
     height: 400px;
     max-width: 85%;
 }
-.reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;display: none;margin: 20px 0;border-radius: 50px;margin-bottom: 0;}
+.reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;display: none;/* margin: 20px 0; */border-radius: 50px;margin-bottom: 0;}
 .reserve .icons {/* display: flex; */height: 175px;font-size: 14px;}
 .reserve .title, .title {
     font-weight: 600;
@@ -110,17 +112,18 @@ body {
     padding-bottom: 50px;
     color: black;
     display: none;
-    background-image: url(../images/bgSpot01.png);
+    /* background-image: url(../images/bgSpot01.png); */
     background-repeat: no-repeat;
     background-size: 500px;
     background-color: #dbdad9 !important;
     background-position: 110% -235px;
     transition: 10s;
+    padding: 50px;
+    padding-bottom: 0;
 }
 .aboutUs.moveBG { background-position: -289px 172px; }
 .aboutUs .title {
-    text-align: center;
-    padding: 50px;
+    margin-bottom: 40px;
 }
 .aboutUs .image {
     background: black;
@@ -130,10 +133,81 @@ body {
     background-repeat: no-repeat;
 }
 .aboutus .subtitle {font-size: 14px;font-weight: 600;}
-.aboutus .content {
-    padding: 55px;
-    padding-right: 120px;
+.aboutus .numbers .content {color: var(--yellow-color);font-weight: 600;font-size: 14px;padding-right: 0;padding: 0;/* margin-bottom: 40px; */float: inline-end;display: none;}
+.aboutus .numbers .content.div3 {display: flex;/* position: absolute; */top: 50%;/* transform: translate(-50%, -50%); */left: 50%;/* margin: 0; *//* justify-content: center; *//* align-items: center; *//* margin: 0; *//* height: 353px; */}
+.aboutus .numbers .content .textLeft {
+    width: 0;
+    margin-right: 50px;
+    margin-left: 25px;
+    text-align: end;
+    line-height: 17px;
+    display: none;
 }
+.aboutus .numbers .content.div3 .textleft {
+    width: 230px;
+}
+.aboutus .numbers {
+    /* padding-top: 50px; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border-right: 7px solid var(--yellow-color); */
+    /* padding-right: 20px; */
+}
+.aboutus .content {
+    padding: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+.aboutus .number span {
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    float: inline-start;
+    width: 100%;
+}
+.aboutus .number i {
+    background-position: right;
+}
+.aboutus .number {
+    float: inline-end;
+    display: inline-block;
+    flex: 1;
+    /* min-width: 105px; */
+}
+.aboutus .number3 {
+    height: 40px;
+    background-image: url(../images/3.png);
+}
+.aboutus .vBar{
+    width: 7px;
+    background-color: var(--yellow-color);
+    padding: 0px;
+    margin: 168px 0px 88px 30px;
+    margin-bottom: 0;
+    height: 100px;
+    margin-top: 0;
+    height: auto;
+}
+.aboutus .number17 {
+    height: 55px;
+    background-image: url(../images/17.png);
+}
+.aboutus .number20 {
+    height: 70px;
+    background-image: url(../images/20.png);
+}
+.aboutus .number60 {
+    height: 100px;
+    background-image: url(../images/60.png);
+    /* width: 300px; */
+}
+.spn3 {/* margin-left: -12px; */}
+.spn17 {/* margin-left: -90px; */}
+.backgroundStyle { background-size: contain;
+    background-repeat: no-repeat;
+    display: block; }
 .aboutus .right .text {
     margin: 7px 0;
     margin-bottom: 20px;
@@ -145,23 +219,41 @@ body {
     padding: 20px 40px;
     border-radius: 5px;
 }
+.aboutus .footer i {min-height: 40px;flex: 1;background-position: center;}
+.aboutus .footer .klaviyo {background-image: url(../images/klaviyo.png);height: 45px;}
+.aboutus .footer .meta {background-image: url(../images/meta.png);height: 50px;}
+.aboutus .footer .ecom {background-image: url(../images/ecom.png);height: 100px;top: -28px;position: relative;}
+.aboutus .footer .google {background-image: url(../images/google.png);height: 40px;top: 5px;position: relative;}
+.aboutus .footer .idv {background-image: url(../images/idv.png);height: 45px;}
 .aboutus .footer {
     font-size: 12px;
     text-align: center;
     /* font-weight: 600; */
-    margin-top: 50px;
+    display: flex;
+    margin: 50px;
+    max-width: 900px;
+    margin: 50px auto 0 auto;
 }
+.footer .facebook { background-image: url(../images/facebook.png);}
+.footer .instagram { background-image: url(../images/instagram.png); }
+.footer .logo {background-image: url(../images/logo.png);height: 15px;margin-top: 5px;}
 .footer .round {
     width: 25px;
     height: 25px;
-    margin: 15px;
+    margin: 0 3px 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    scale: 1;
+    cursor: pointer;
 }
 .footer .text {
     font-size: 10px;
     font-weight: 500;
 }
 button { cursor: pointer; }
-.partners {/* background-color: #f2f2f2; */padding: 50px;color: black;background-color: white;display: none;}
+body > .footer {padding: 25px 70px 70px 70px;color: black;background-color: white;height: 127px;font-size: 11px;display: flex;/* margin-bottom: -12px; *//* top: 36px; *//* position: relative; *//* padding-bottom: 0; *//* position: relative; *//* bottom: 83px; */}
+body > .footer p {}
 .iPartner {
     /* border: 2px solid #949494; */
     display: inline-block;
@@ -177,6 +269,20 @@ button { cursor: pointer; }
     margin-left: 45px;
     margin-top: 5px;
     font-weight: 200;
+}
+.footer .left {
+    /* float: left; */
+    /* flex: 1; */
+    width: 160px;
+    height: auto;
+}
+.footer .center {
+    flex: 1;
+}
+.footer .right {
+    /* float: right; */
+    /* flex: 1; */
+    width: 160px;
 }
 .links {
     border-bottom: 2px solid #383838;
@@ -312,7 +418,7 @@ button { cursor: pointer; }
 .section2 {
     background-color: white;
     padding: 25px;
-    margin: 20px;
+    /* margin: 20px; */
     /* border: 1px solid black; */
     border-radius: 50px;
     text-align: center;
@@ -367,7 +473,7 @@ button { cursor: pointer; }
 .header .btnGradient {
     margin-right: 0;
 }
-.hide { display: none; }
+.hide {display: none;}
 .divIcoPhone:hover {
     filter: brightness(1.3);
 }
@@ -400,9 +506,26 @@ button { cursor: pointer; }
     padding: 45px;
 }
 .steps {
-    padding: 20px 85px;
+    padding: 20px 85px 45px 85px;
+    padding-bottom: 20px;
 }
-.steps .step {}
+
+.steps .step.exit {
+    left: -1500px !important;
+}
+.steps .step.hide {display: inline-block;left: 1500px;position: absolute;/* display: none; */}
+.steps .step.active { left: 0; }
+.steps .step {
+    /* display: inline-block; */
+    position: relative;
+    left: 10%;
+    right: 10%;
+    height: 200px;
+    left: 0;
+    transition: 1s;
+    left: 1500px;
+    height: auto;
+}
 .steps .step .left {
     border-radius: 20px 0 0  20px;
     text-align: right;
@@ -460,6 +583,11 @@ button { cursor: pointer; }
     background-color: #f4f4f4;
     border: 1px solid #dedede;
 }
+.divSection2, .divReserve  {
+    padding: 20px;
+    padding-bottom: 0;
+}
+.bgGray2 { background-color: #dbdad9; }
 .bgGray {
     background-color: #e3e3e3;
 }
@@ -484,3 +612,11 @@ button { cursor: pointer; }
 .step1 .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: -45deg;position: absolute;left: calc(50% - 32px);/* margin-top: 7%; *//* top: 42px; *//* padding-top: 25px; *//* transition: 0.5s; */}
 .step2 .bomb {background-image: url(../images/blackBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 18px);}
 .step3 .bomb {background-image: url(../images/redBomb.png);rotate: -45deg;left: calc(50% - 32px);}
+
+
+@media (min-width: 930px) and (max-width: 1200px) {
+    .steps {/* padding-bottom: 90px !important; */}
+}
+@media (min-width: 900px) {
+    .aboutus .numbers .content .textleft { display: inline-block }
+}
