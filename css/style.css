@@ -110,7 +110,7 @@ body {
 .round[icon=video] {
     background-image: url(../images/video.png);
 }
-.divAboutUs { background-color: #dbdad9; }
+.divAboutUs {background-color: #dbdad9;transition: 10s;background-image: url(../images/bgSpot01.png);background-repeat: no-repeat;background-size: 500px;/* background-color: #dbdad9 !important; */background-position: 110% -235px;/* background-position: -289px 172px; */}
 .aboutUs {
     padding-bottom: 50px;
     color: black;
@@ -118,7 +118,7 @@ body {
     /* background-image: url(../images/bgSpot01.png); */
     background-repeat: no-repeat;
     background-size: 500px;
-    background-color: #dbdad9 !important;
+    /* background-color: #dbdad9 !important; */
     background-position: 110% -235px;
     transition: 10s;
     padding: 50px;
@@ -126,7 +126,7 @@ body {
     opacity: 0;
     transition: 2s;
 }
-.aboutUs.moveBG { background-position: -289px 172px; }
+.divAboutUs.moveBG { background-position: -289px 172px; }
 .aboutUs .title {
     margin-bottom: 40px;
 }

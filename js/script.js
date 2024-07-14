@@ -53,7 +53,7 @@ $(document).ready(function(){
     }, 2500);
     
     startCarousel();
-    //startAnimationBackground();
+    startAnimationBackground();
     startNumbers();
     resize();
 });
@@ -87,9 +87,9 @@ function startAnimationBackground(){
     }, 12000);
 }
 function changeBG(){
-    $(".aboutUs").addClass("moveBG");
+    $(".divAboutUs").addClass("moveBG");
     setTimeout(function(){
-        $(".aboutUs").removeClass("moveBG");
+        $(".divAboutUs").removeClass("moveBG");
     }, 5000);
 }
 
