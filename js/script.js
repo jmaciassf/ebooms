@@ -48,6 +48,10 @@ $(document).ready(function(){
             stopCarousel();
     });
 
+    setTimeout(function () {
+        $("body > .footer").addClass("show");
+    }, 2500);
+    
     startCarousel();
     //startAnimationBackground();
     startNumbers();

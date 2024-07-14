@@ -257,7 +257,8 @@ body {
     font-weight: 500;
 }
 button { cursor: pointer; }
-body > .footer {padding: 25px 70px 70px 70px;color: black;background-color: white;height: 127px;font-size: 11px;display: flex;/* margin-bottom: -12px; *//* top: 36px; *//* position: relative; *//* padding-bottom: 0; *//* position: relative; *//* bottom: 83px; */}
+body > .footer.show {display: flex;}
+body > .footer {padding: 25px 70px 70px 70px;color: black;background-color: white;height: 127px;font-size: 11px;display: flex;/* margin-bottom: -12px; *//* top: 36px; *//* position: relative; *//* padding-bottom: 0; *//* position: relative; *//* bottom: 83px; */display: none;}
 body > .footer p {}
 .iPartner {
     /* border: 2px solid #949494; */
