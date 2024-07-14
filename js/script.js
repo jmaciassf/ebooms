@@ -56,6 +56,60 @@ $(document).ready(function(){
     startAnimationBackground();
     startNumbers();
     resize();
+
+    
+if(!window.navigator.userAgentData.mobile){
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop > positions.aboutUs)
+        {
+            // Show reserve
+            if(!$(".divAboutUs").hasClass("show")){
+                $(".divAboutUs").addClass("show");
+            }
+            hideSection2();
+        }
+        else if(scrollTop > positions.reserve)
+        {
+            // Show reserve
+            if(!$(".divReserve").hasClass("show")){
+                $(".divReserve").addClass("show");
+            }
+        }
+        else if(scrollTop > positions.section2)
+        {
+            // Show section2
+            if(!$(".divSection2").hasClass("show")){
+                $(".divSection2").addClass("show");
+                startCarousel();
+            }
+            hideAboutUs();
+        }
+        else 
+        {
+            hideSection2();
+            if($(".divReserve").hasClass("show")){
+                $(".divReserve").removeClass("show");
+            }
+            hideAboutUs();
+        }
+    
+        function hideSection2() {
+            if($(".divSection2").hasClass("show")){
+                $(".divSection2").removeClass("show");
+                stopCarousel();
+            }
+        }
+        function hideAboutUs() {
+            if($(".divAboutUs").hasClass("show")){
+                $(".divAboutUs").removeClass("show");
+            }
+        }
+    });
+}
+else {
+    $("body").addClass("mobile");
+}
 });
 
 $(window).on("resize", function() {
@@ -122,55 +176,6 @@ function resize() {
     
 }
 
-if(!window.navigator.userAgentData.mobile){
-    $(window).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop > positions.aboutUs)
-        {
-            // Show reserve
-            if(!$(".divAboutUs").hasClass("show")){
-                $(".divAboutUs").addClass("show");
-            }
-            hideSection2();
-        }
-        else if(scrollTop > positions.reserve)
-        {
-            // Show reserve
-            if(!$(".divReserve").hasClass("show")){
-                $(".divReserve").addClass("show");
-            }
-        }
-        else if(scrollTop > positions.section2)
-        {
-            // Show section2
-            if(!$(".divSection2").hasClass("show")){
-                $(".divSection2").addClass("show");
-                startCarousel();
-            }
-            hideAboutUs();
-        }
-        else 
-        {
-            hideSection2();
-            if($(".divReserve").hasClass("show")){
-                $(".divReserve").removeClass("show");
-            }
-            hideAboutUs();
-        }
-    
-        function hideSection2() {
-            if($(".divSection2").hasClass("show")){
-                $(".divSection2").removeClass("show");
-                stopCarousel();
-            }
-        }
-        function hideAboutUs() {
-            if($(".divAboutUs").hasClass("show")){
-                $(".divAboutUs").removeClass("show");
-            }
-        }
-    });
-}
 
 function call(){
     window.open("https://calendly.com/joshuasanchez-ebooms/llamada-demo?month=2024-07");

@@ -46,8 +46,8 @@ body {
     height: 400px;
     max-width: 85%;
 }
-.show .reserve { opacity: 1; }
-.show .aboutUs { opacity: 1; }
+.mobile .reserve, .show .reserve { opacity: 1; }
+.mobile .aboutUs, .show .aboutUs { opacity: 1; }
 .reserve {/* background-color: #f2f2f2; */padding: 67px;padding-top: 50px;text-align: center;color: #f3f2de;display: none;/* margin: 20px 0; */border-radius: 50px;margin-bottom: 0;opacity: 0;transition: 2s;}
 .reserve .icons {/* display: flex; */height: 175px;font-size: 14px;}
 .reserve .title, .title {
@@ -421,7 +421,8 @@ body > .footer p {}
 .section1 button.section1  {}
  button, .btnLarge 
 {width: 100%;margin-left: 0;max-width: 200px;margin: 20px auto;}
-.show .section2 { opacity: 1; }
+.mobile .section2, .show .section2 { opacity: 1; }
+
 .section2 {
     opacity: 0;
     background-color: white;
