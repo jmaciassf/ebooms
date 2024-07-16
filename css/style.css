@@ -279,7 +279,7 @@ body > .footer p {}
 .footer .left {
     /* float: left; */
     /* flex: 1; */
-    width: 160px;
+    width: 215px;
     height: auto;
 }
 .footer .center {
@@ -288,7 +288,7 @@ body > .footer p {}
 .footer .right {
     /* float: right; */
     /* flex: 1; */
-    width: 160px;
+    width: 215px;
 }
 .links {
     border-bottom: 2px solid #383838;
@@ -325,6 +325,9 @@ body > .footer p {}
     width: 20px;
 }
 .warning {background-color: #F4ad03;background-color: var(--yellow-color);color: black;padding: 10px 30px;text-align: center;font-size: 12px;}
+.topfixed .close {
+    display: none;
+}
 .close {
     cursor: pointer;
     border-radius: 25px;
@@ -336,6 +339,7 @@ body > .footer p {}
     position: absolute;
     right: 7px;
     font-size: 20px !important;
+    /* display: none; */
 }
 .divIcoPhone {bottom: 10px;top: auto;position: fixed;/* height: 20px; */border: none;/* width: 20px; */padding: 7px;border-radius: 100%;font-size: 20px !important;box-shadow: -2px 0px 10px -2px #ff040440;right: 10px;/* bottom: 0; *//* background-color: #e34c0d; *//* border: 1px solid #ebe2d296; */cursor: pointer;background: url("../images/icoPhone.png");width: 40px;height: 40px;background-size: contain;transition: 1s;}
 .icoPhone {border: 1px solid white;border-radius: 100%;padding: 10px;}
@@ -623,11 +627,58 @@ body > .footer p {}
 .step1 .bomb {background-image: url(../images/yellowBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: -45deg;position: absolute;left: calc(50% - 32px);/* margin-top: 7%; *//* top: 42px; *//* padding-top: 25px; *//* transition: 0.5s; */}
 .step2 .bomb {background-image: url(../images/blackBomb.png);width: 60px;height: 60px;background-size: contain;background-repeat: no-repeat;rotate: 45deg;position: absolute;left: calc(50% - 18px);}
 .step3 .bomb {background-image: url(../images/redBomb.png);rotate: -45deg;left: calc(50% - 32px);}
-
-
+.footer a { cursor: pointer; }
+@media (max-width: 1023px) {
+    .header span { display: none; }
+    .header {
+    /* height: 57px; */
+}
+    .divIcoPhone {
+    bottom: auto;
+    top: 62px;
+    z-index: 3;
+    display: none;
+    }
+}
+@media (max-width: 900px) {
+    .section1 {padding: 115px 7px 7px 7px;}
+    .section1 .line1 { display: block; }
+    .section1 .left {
+    margin-top: 20px;
+    /* text-align: center; */
+}
+    .section1 .title {text-align: center;margin-bottom: 10px;}
+    .section1 .btnGoToCall, .section2 .btnGoToCall {margin: 0 auto;/* width: 120%; *//* display: block; *//* width: max-content; */max-width: none;}
+    .video {
+    max-width: 100%;
+    width: 100%;
+}
+    .section1 .line2 {
+    margin-top: 20px;
+}
+    .section1 .line2 p {
+    margin-bottom: 0;
+}
+    .steps {
+    padding: 20px 20px 40px 20px;
+}
+    .section2 {
+    padding: 20px 20px;
+}
+    .reserve {
+    padding: 20px;
+}
+    .reserve .title {
+    text-align: center;
+}
+    .reserve .bgGray {
+    padding: 20px;
+}
+}
 @media (min-width: 930px) and (max-width: 1200px) {
     .steps {/* padding-bottom: 90px !important; */}
 }
 @media (min-width: 900px) {
     .aboutus .numbers .content .textleft { display: inline-block }
+    
 }

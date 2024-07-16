@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(".section1 .left, .section1 .flex3").fadeOut();
     setTimeout(function () {
         $(".section1 .left, .section1 .flex3, .section1 .line2").fadeIn(1000);
-        $(".section2, .reserve, .aboutUs, .partner").fadeIn();
+        $(".section2, .reserve, .aboutUs, .partner, .topfixed .close").fadeIn();
 
         setTimeout(function(){
             resize();
