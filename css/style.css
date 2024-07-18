@@ -684,7 +684,7 @@ body > .footer p {}
 }
 }
 
-@media (min-width:900px)  {
+@media (min-width:1200px)  {
     .section1 .left {
         margin-top: 115px;
         display: none;
@@ -692,9 +692,6 @@ body > .footer p {}
     .section1 .line1 { display: flex; }
     .section1 {
     padding: 130px 0px 15px 40px; }
-}
-@media only screen and (min-device-width: 400px){
-    body { font-style: inherit; }
 }
 
 @media (min-device-width: 400px){

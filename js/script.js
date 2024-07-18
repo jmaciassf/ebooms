@@ -58,7 +58,7 @@ $(document).ready(function(){
     resize();
 
     
-if(window.outerWidth >= 900){
+if(window.outerWidth >= 900){ // this is important
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();
         if(scrollTop > positions.aboutUs)
