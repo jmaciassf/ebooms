@@ -58,7 +58,7 @@ $(document).ready(function(){
     resize();
 
     
-if(!window.navigator.userAgentData.mobile){
+if(window.outerWidth >= 900){
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();
         if(scrollTop > positions.aboutUs)
