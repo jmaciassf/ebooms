@@ -651,11 +651,70 @@ body > .footer p {}
 @media (min-width: 900px) {
     .aboutus .numbers .content .textleft { display: inline-block }
 }
-@media (min-device-width:300px)  {
+@media (max-width:900px)  {
+    .iconsSteps {
+    margin: 30px 0 10px 0;
+}
+    .reserve .icons {
+    height: auto;
+}
+    .reserve .line { display: none; }
+    .divRound span {
+    display: inline-block;
+    /* margin-top: -12px; */
+    top: 5px;
+    position: relative;
+    left: 0px;
+    flex: 1;
+    text-align: justify;
+}
+    .divRound {
+    /* width: calc(15% - 5px); */
+    /* margin: 5px; */
+    display: block;
+    width: 100%;
+    height: 103px;
+    display: flex;
+}
+    .round {
+    scale: 4;
+    display: inline-block;
+    left: -10px;
+}
+    .iconsSteps i:hover {
+    padding: 25px 10px;
+}
+    .iconsSteps i {
+    padding: 20px 10px;
+    border-radius: 100%;
+    margin: 1px;
+}
+    .steps .step1 .left {
+    background-color: black;
+}
+    .steps .step .right {border-radius: 0px 0px 20px 20px;}
+    .steps .step .left {
+    border-radius: 20px 20px 0  0px;
+    text-align: justify;
+}
+    .step .bomb {
+    /* top: 15%; */
+    display: none;
+}
+    .step .box {
+    display: block;
+}
+    .warning {
+    padding: 9px 30px 9px 10px;
+}
+    .topfixed .close {
+    right: 5px;
+    top: 20px;
+}
     body { font-style: inherit; }
     .section1 {padding: 115px 7px 7px 7px;}
     .section1 .line1 { display: block; }
-    .section1 .left { margin-top: 20px; }
+    .section1 .left {margin-top: 40px;}
     .section1 .title {text-align: center;margin-bottom: 10px;}
     .section1 .btnGoToCall, .section2 .btnGoToCall {margin: 0 auto;/* width: 120%; *//* display: block; *//* width: max-content; */max-width: none;}
     .video { max-width: 100%;
@@ -680,7 +739,7 @@ body > .footer p {}
     text-align: center;
 }
     .reserve .bgGray {
-    padding: 20px;
+    padding: 10px 15px;
 }
 }
 
