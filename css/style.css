@@ -6,6 +6,9 @@
 .bgBlue { background-color: #07adbd; }
 .bgRed {background-color: #e22211;color: black !important;}
 .bgBrown { background-color: #250401; }
+body.showMenu {
+    overflow: hidden;
+}
 body {
      font-family: "Poppins", sans-serif;
      font-weight: 400;
@@ -21,6 +24,20 @@ body {
      overflow-x: hidden;
      /* display: block; */
  }
+.header .menu, .divMenu .close {
+    background-image: url(../images/menu.png);
+    height: 25px;
+    width: 40px;
+    margin: auto;
+    background-position: center;
+    cursor: pointer;
+}
+.divMenu .close {
+ background-image: url(../images/close.png);
+ float: right;
+ margin-top: 10px;
+ margin-right: 10px;
+ }
 .header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 13px;color: black;/* position: fixed; *//* width: 100%; */}
 .flex {display: flex;}
 .flex1 { flex: 1; }
@@ -30,7 +47,7 @@ body {
 
 
 .section1 .flex3 { display: none; }
-.header .name {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
+.header .name, .divMenu .logo {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
 .header span {margin: 0px 10px;line-height: 61px;cursor: pointer;height: 30px;font-weight: 700;}
 .btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 13px;font-weight: 600;}
 .bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;/* font-size: 24px; */}
@@ -141,24 +158,42 @@ body {
     background-repeat: no-repeat;
 }
 .aboutus .subtitle {font-size: 14px;font-weight: 600;}
-.aboutus .numbers .content {color: var(--yellow-color);font-weight: 600;font-size: 14px;padding-right: 0;padding: 0;/* margin-bottom: 40px; */float: inline-end;display: none;}
-.aboutus .numbers .content.div3 {display: flex;/* position: absolute; */top: 50%;/* transform: translate(-50%, -50%); */left: 50%;/* margin: 0; *//* justify-content: center; *//* align-items: center; *//* margin: 0; *//* height: 353px; */}
+.aboutus .numbers .content {color: var(--yellow-color);font-weight: 600;font-size: 14px;padding-right: 0;padding: 0;/* margin-bottom: 40px; *//* float: inline-end; */visibility: hidden;/* display: none; */margin-bottom: 30px;display: block;/* transition: 3s; */}
+.aboutus .numbers .content.div3 {display: block;/* position: absolute; */top: 50%;/* transform: translate(-50%, -50%); */left: 50%;/* margin: 0; *//* justify-content: center; *//* align-items: center; *//* margin: 0; */height: 70px;}
 .aboutus .numbers .content .textLeft {
     width: 0;
     margin-right: 50px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     text-align: end;
     line-height: 17px;
     display: none;
 }
 .aboutus .numbers .content.div3 .textleft {
     width: 230px;
+    float: right;
 }
+.aboutus .numbers .div17 {
+    height: 80px;
+}
+.aboutus .numbers .div20 {
+    height: 100px;
+}
+.aboutus .numbers .div60 {
+    height: 120px;
+}
+.aboutus .numbers.step1 .div3,
+.aboutus .numbers.step2 .div3, .aboutus .numbers.step2 .div17,
+.aboutus .numbers.step3 .div3, .aboutus .numbers.step3 .div17, .aboutus .numbers.step3 .div20,
+.aboutus .numbers.step4 .div3, .aboutus .numbers.step4 .div17, .aboutus .numbers.step4 .div20, .aboutus .numbers.step4 .div60
+{/* display: block; */visibility: visible;/* float: none; */}
+
+.aboutus .numbers.step3 {}
+.aboutus .numbers.step4 .div60 { display: block; }
 .aboutus .numbers {
     /* padding-top: 50px; */
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    display: block;
+    /* justify-content: end; */
+    /* align-items: center; */
     /* border-right: 7px solid var(--yellow-color); */
     /* padding-right: 20px; */
 }
@@ -167,6 +202,7 @@ body {
     padding-right: 20px;
     font-weight: 500;
     padding-top: 100px;
+    /* padding-bottom: 50px; */
 }
 .aboutus .number span {
     margin-top: 10px;
@@ -177,15 +213,17 @@ body {
 }
 .aboutus .number i {
     background-position: right;
+    /* transition: 2s; */
 }
 .aboutus .number {
     float: inline-end;
     display: inline-block;
     flex: 1;
     /* min-width: 105px; */
+    /* transition: 2s; */
 }
 .aboutus .number3 {
-    height: 40px;
+    height: 30px;
     background-image: url(../images/3.png);
 }
 .aboutus .vBar{
@@ -199,7 +237,7 @@ body {
     height: auto;
 }
 .aboutus .number17 {
-    height: 55px;
+    height: 50px;
     background-image: url(../images/17.png);
 }
 .aboutus .number20 {
@@ -207,10 +245,12 @@ body {
     background-image: url(../images/20.png);
 }
 .aboutus .number60 {
-    height: 100px;
+    height: 90px;
     background-image: url(../images/60.png);
     /* width: 300px; */
 }
+.showMenu .divMenu { display: block; }
+.divMenu {display: none;width: 100%;height: 100%;background-color: white;position: fixed;z-index: 3;padding: 5px 10px;}
 .spn3 {/* margin-left: -12px; */}
 .spn17 {/* margin-left: -90px; */}
 .backgroundStyle { background-size: contain;
@@ -327,11 +367,17 @@ body > .footer p {}
     height: 20px;
     width: 20px;
 }
+
+.warning .btnGoToCall:hover {filter: opacity(0.5);}
+.warning .btnGoToCall {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .warning {background-color: #F4ad03;background-color: var(--yellow-color);color: black;padding: 10px 30px;text-align: center;font-size: 12px;}
 .topfixed .close {
     display: none;
 }
-.close {
+.warning .close {
     cursor: pointer;
     border-radius: 25px;
     border: 1px solid black;
@@ -647,7 +693,9 @@ body > .footer p {}
     .aboutus .numbers .content .textleft { display: inline-block }
 }
 @media (max-width:900px)  {
-    .aboutus .number i { background-position: center; }
+    .aboutus .number {display: block;float: none;}
+.aboutus .number span { text-align: center; }
+    .aboutus .number i {background-position: center;}
     .footer .left { width: calc(50% - 10px);
         margin-right: 10px; }
     body > .footer .icons {margin-left: 8px;}

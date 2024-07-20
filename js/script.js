@@ -48,6 +48,15 @@ $(document).ready(function(){
             stopCarousel();
     });
 
+    $(".header .menu").click(function(){
+        console.log("show menu");
+        $("body").addClass("showMenu");
+    });
+    $(".divMenu .close").click(function(){
+        console.log("hide menu");
+        $("body").removeClass("showMenu");
+    });
+    
     setTimeout(function () {
         $("body > .footer").addClass("show");
     }, 2500);
@@ -153,13 +162,15 @@ function startNumbers(){
     changeNumbers();
     setInterval(function(){
         changeNumbers();
-    }, 3000);
+    }, 1500);
     function changeNumbers(){
         // Ir al siguiente numero
         index++;
         if(index == 4) index = 0;
-        $(".aboutus .numbers .content").hide();
-        $(".aboutus .numbers .content").eq(index).fadeIn();
+        $(".aboutus .numbers").removeClass("step1 step2 step3 step4");
+        $(".aboutus .numbers").addClass("step"+(index+1));
+        //$(".aboutus .numbers .content").hide();
+        //$(".aboutus .numbers .content").eq(index).fadeIn();
     }
 }
 
