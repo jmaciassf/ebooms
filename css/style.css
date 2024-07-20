@@ -642,16 +642,30 @@ body > .footer p {}
     display: none;
     }
 }
-@media (min-width:241px) and (max-width:900px) {
-    
-}
-@media (min-width: 930px) and (max-width: 1200px) {
-    .steps {/* padding-bottom: 90px !important; */}
-}
 @media (min-width: 900px) {
+    
     .aboutus .numbers .content .textleft { display: inline-block }
 }
 @media (max-width:900px)  {
+    body > .footer .icons {margin-left: 8px;}
+    body > .footer {
+    padding: 7px 12px;
+    margin-bottom: 35px;
+}
+    .aboutus .footer {
+    margin-top: 17px;
+    height: 70px;
+}
+    .aboutus .content {
+    padding: 0;
+}
+    .aboutus .numbers {justify-content: center;padding-top: 15px;}
+    .aboutUs {
+    padding: 20px 12px 0px 12px;
+}
+    .aboutUs .flex {
+    display: block;
+}
     .iconsSteps {
     margin: 30px 0 10px 0;
 }
@@ -709,10 +723,13 @@ body > .footer p {}
 }
     .topfixed .close {
     right: 5px;
-    top: 20px;
+    top: 16px;
 }
     body { font-style: inherit; }
-    .section1 {padding: 115px 7px 7px 7px;}
+    .noWarning .section1 {
+    padding-top: 45px;
+}
+    .section1 {padding: 120px 7px 7px 7px;}
     .section1 .line1 { display: block; }
     .section1 .left {margin-top: 40px;}
     .section1 .title {text-align: center;margin-bottom: 10px;}

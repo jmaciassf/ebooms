@@ -14,7 +14,7 @@ $(document).ready(function(){
     $(".warning .close").click(function(){
         console.log("close warning");
         $(".warning").hide();
-        $(".body").addClass("noWarning");
+        $("body").addClass("noWarning");
     });
 
     $(".btnGoToCall").click(function(){
