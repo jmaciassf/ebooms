@@ -24,6 +24,7 @@ body {
      overflow-x: hidden;
      /* display: block; */
  }
+.header .menu { display: none; }
 .header .menu, .divMenu .close {
     background-image: url(../images/menu.png);
     height: 25px;
@@ -32,11 +33,14 @@ body {
     background-position: center;
     cursor: pointer;
 }
+.divMenu .btnGoToCall {
+    margin-right: 0px;
+}
 .divMenu .close {
  background-image: url(../images/close.png);
  float: right;
- margin-top: 10px;
- margin-right: 10px;
+ margin-top: 16px;
+ margin-right: 37px;
  }
 .header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 13px;color: black;/* position: fixed; *//* width: 100%; */}
 .flex {display: flex;}
@@ -251,6 +255,26 @@ body {
 }
 .showMenu .divMenu { display: block; }
 .divMenu {display: none;width: 100%;height: 100%;background-color: white;position: fixed;z-index: 3;padding: 5px 10px;}
+.divMenu .row {
+    display: flex;
+}
+.divMenu .links p:hover {border: 1px solid #6f6fff;}
+.divMenu .links p {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.divMenu .links {
+    border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    width: calc(100% - 15px);
+    margin-left: -3px;
+}
 .spn3 {/* margin-left: -12px; */}
 .spn17 {/* margin-left: -90px; */}
 .backgroundStyle { background-size: contain;
@@ -677,7 +701,16 @@ body > .footer p {}
 
 
 @media (max-width: 1023px) {
-    .header span { display: none; }
+   
+}
+@media (min-width: 900px) {
+    
+    .aboutus .numbers .content .textleft { display: inline-block }
+}
+@media (max-width:900px)  {
+    
+.header .menu { display: block; }
+     .header span { display: none; }
     .header {
     /* height: 57px; */
 }
@@ -687,12 +720,6 @@ body > .footer p {}
     z-index: 3;
     display: none;
     }
-}
-@media (min-width: 900px) {
-    
-    .aboutus .numbers .content .textleft { display: inline-block }
-}
-@media (max-width:900px)  {
     .aboutus .number {display: block;float: none;}
 .aboutus .number span { text-align: center; }
     .aboutus .number i {background-position: center;}
@@ -710,7 +737,7 @@ body > .footer p {}
     .aboutus .content {
     padding: 0;
 }
-    .aboutus .numbers {justify-content: center;padding-top: 15px;}
+    .aboutus .numbers {justify-content: center;padding-top: 30px;}
     .aboutUs {
     padding: 20px 12px 0px 12px;
 }

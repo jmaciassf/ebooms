@@ -22,13 +22,17 @@ $(document).ready(function(){
     });
 
     $(".step .box").hover(function(){
-        $(this).addClass("hover");
-        setTimeout(function(){ resize(); }, 300);
-        resize();
+        if(window.outerWidth >= 900){
+            $(this).addClass("hover");
+            setTimeout(function(){ resize(); }, 300);
+            resize();
+        }
     }, function() {
-        $(this).removeClass("hover");
-        setTimeout(function(){ resize(); }, 300);
-        resize();
+        if(window.outerWidth >= 900){
+            $(this).removeClass("hover");
+            setTimeout(function(){ resize(); }, 300);
+            resize();
+        }
     });
 
     $(".iconsSteps i").click(function(){
@@ -131,7 +135,7 @@ function startCarousel(){
     start();
     carouselInterval = setInterval(function(){
         start();
-    }, 5000);
+    }, 500000);
     function start(){
         // Ir al siguiente paso
         stepIndex++;
