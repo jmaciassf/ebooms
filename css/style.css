@@ -52,7 +52,7 @@ body {
 
 .section1 .flex3 { display: none; }
 .header .name, .divMenu .logo {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
-.header span {margin: 0px 10px;line-height: 61px;cursor: pointer;height: 30px;font-weight: 700;}
+.header span {margin: 0px 10px;line-height: 61px;cursor: pointer;height: 47px;font-weight: 700;}
 .btnGradient {padding: 10px 15px;margin-left: 10px;/* background: #f3f2de; */cursor: pointer;border: 1px solid #00000000;border-radius: 19px;/* background-color: #e22211; */color: #f3f2de;/* transition: 1s; */font-size: 13px;font-weight: 600;}
 .bgBlack {/* background-color: black; *//* height: 450px; */color: #f3f2de;margin: 0 auto;text-align: center;padding: 80px 40px 80px 40px;/* font-size: 24px; */}
 .bgBlack .title {
@@ -397,7 +397,9 @@ body > .footer p {}
     text-decoration: underline;
     cursor: pointer;
 }
-.warning {background-color: #F4ad03;background-color: var(--yellow-color);color: black;padding: 10px 30px;text-align: center;font-size: 12px;}
+
+.warning .text {flex: 1;margin-right: 5px;}
+.warning {background-color: var(--yellow-color);color: black;padding: 10px 15px;text-align: center;font-size: 12px;display: flex;}
 .topfixed .close {
     display: none;
 }
@@ -407,12 +409,13 @@ body > .footer p {}
     border: 1px solid black;
     color: white;
     background-color: black;
-    float: right;
-    top: 7px;
     position: absolute;
-    right: 7px;
     font-size: 20px !important;
     /* display: none; */
+    position: inherit;
+    height: 20px;
+    width: 20px;
+    margin: auto;
 }
 .divIcoPhone {bottom: 10px;top: auto;position: fixed;/* height: 20px; */border: none;/* width: 20px; */padding: 7px;border-radius: 100%;font-size: 20px !important;box-shadow: -2px 0px 10px -2px #ff040440;right: 10px;/* bottom: 0; *//* background-color: #e34c0d; *//* border: 1px solid #ebe2d296; */cursor: pointer;background: url("../images/icoPhone.png");width: 40px;height: 40px;background-size: contain;transition: 1s;}
 .icoPhone {border: 1px solid white;border-radius: 100%;padding: 10px;}
@@ -799,6 +802,7 @@ body > .footer p {}
 }
     .warning {
     padding: 9px 30px 9px 10px;
+    padding-right: 10px;
 }
     .topfixed .close {
     right: 5px;
