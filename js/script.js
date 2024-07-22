@@ -212,5 +212,11 @@ function goTo(section){
     }
 
     hideMenu();
-    $("body").scrollTop($("body").scrollTop() - 110);
+
+    let minus = 50;
+    if(window.outerWidth > 900){
+        // Desktop
+        minus = 95;
+    }
+    $("body").scrollTop($("body").scrollTop() - minus);
 }

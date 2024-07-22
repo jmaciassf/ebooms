@@ -23,6 +23,7 @@ body {
      /* display: none; */
      overflow-x: hidden;
      /* display: block; */
+     min-width: 385px;
  }
 .header .menu { display: none; }
 .header .menu, .divMenu .close {
