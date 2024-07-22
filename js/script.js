@@ -36,7 +36,7 @@ $(document).ready(function(){
     });
 
     $(".iconsSteps i").click(function(){
-       console.log("click");
+       //console.log("click");
 
         let step = $(this).attr("step");
         if(!$(".steps .step"+step).hasClass("active")){
@@ -57,8 +57,7 @@ $(document).ready(function(){
         $("body").addClass("showMenu");
     });
     $(".divMenu .close").click(function(){
-        console.log("hide menu");
-        $("body").removeClass("showMenu");
+        hideMenu();
     });
     
     setTimeout(function () {
@@ -135,7 +134,7 @@ function startCarousel(){
     start();
     carouselInterval = setInterval(function(){
         start();
-    }, 500000);
+    }, 5000);
     function start(){
         // Ir al siguiente paso
         stepIndex++;
@@ -191,7 +190,27 @@ function resize() {
     
 }
 
-
 function call(){
     window.open("https://calendly.com/joshuasanchez-ebooms/llamada-demo?month=2024-07");
+}
+
+function hideMenu(){
+    console.log("hide menu");
+    $("body").removeClass("showMenu");
+}
+
+function goTo(section){
+    console.log("goTo");
+    switch(section){
+        case "aboutUs":
+            location.href = "#divAboutUs";
+            break;
+
+        case "ourProcess":
+            location.href = "#divReserve";
+            break;
+    }
+
+    hideMenu();
+    $("body").scrollTop($("body").scrollTop() - 110);
 }

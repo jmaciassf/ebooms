@@ -27,8 +27,8 @@
                 </div>
                 <span class="shadowBorder shadow1"></span>
                 <span class="shadowBorder shadow2"></span>
-                <span class="link">Nuestro Proceso</span>
-                <span class="link">Sobre Nosotros</span>
+                <span class="link" onclick="goTo('ourProcess')">Nuestro Proceso</span>
+                <span class="link" onclick="goTo('aboutUs')">Sobre Nosotros</span>
                 <button class="firstFont btnGradient btnGoToCall">Agenda tu llamada</button>
                 <i class="menu backgroundStyle"></i>
             </div> 
@@ -44,8 +44,8 @@
                 <i class="close backgroundStyle"></i>
             </div>
             <div class="links">
-                <p class="link">Nuestro Proceso</p>
-                <p class="link">Sobre Nosotros</p>
+                <p class="link" onclick="goTo('ourProcess')">Nuestro Proceso</p>
+                <p class="link" onclick="goTo('aboutUs')">Sobre Nosotros</p>
             </div>
         </div>
         
@@ -132,7 +132,7 @@
         </div>
 
         <!-- Section 3 - Reserve -->
-        <div class="divReserve bgGray2">
+        <div class="divReserve bgGray2" id="divReserve">
             <div class="reserve bgWhite">
                 <div class="title">Empieza tu Proceso de Aplicación<br>
                     <span class="title2">¡Reserva tu llamada completamente Gratis!</span>
@@ -156,7 +156,7 @@
         </div>
 
         <!-- Section 4 - About us -->
-        <div class="divAboutUs">
+        <div class="divAboutUs" id="divAboutUs">
         <div class="aboutUs">            
             <div class="flex">
                 <div class="flex1">
