@@ -213,10 +213,10 @@ function goTo(section){
 
     hideMenu();
 
-    let minus = 50;
+    let minus = 30;
     if(window.outerWidth > 900){
         // Desktop
-        minus = 95;
+        minus = 50;
     }
     $("body").scrollTop($("body").scrollTop() - minus);
 }
