@@ -213,7 +213,7 @@ function goTo(section){
 
     hideMenu();
 
-    let minus = 30;
+    let minus = 50;
     if(window.outerWidth > 900){
         // Desktop
         minus = 50;
