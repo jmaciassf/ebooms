@@ -68,7 +68,7 @@ body {
     margin-top: 30px;
     border-radius: 50px;
     width: 650px;
-    height: 400px;
+    height: 365px;
     max-width: 85%;
 }
 .mobile .reserve, .show .reserve { opacity: 1; }
@@ -176,6 +176,9 @@ body {
 .aboutus .numbers .content.div3 .textleft {
     width: 230px;
     float: right;
+    max-width: 230px;
+    min-width: 220px;
+    width: 50%;
 }
 .aboutus .numbers .div17 {
     height: 80px;
@@ -309,6 +312,7 @@ body {
 }
 .footer .facebook { background-image: url(../images/facebook.png);}
 .footer .instagram { background-image: url(../images/instagram.png); }
+.footer .youtube { background-image: url(../images/youtube.png); }
 .footer .logo {background-image: url(../images/logo.png);height: 15px;margin-top: 5px;}
 .footer .round {
     width: 25px;
