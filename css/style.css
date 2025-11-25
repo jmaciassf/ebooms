@@ -49,8 +49,56 @@ body {
 .flex2 { flex: 2; }
 .flex3 { flex: 3; }
 
+.terrain, .recipe { margin-top: 80px; }
+.terrain ol {    
+    list-style-type: none;
+    counter-reset: item;
+    padding-left: 0;
+    font-weight: 600;
+}
+.terrain li {
+    display: flex;
+    position: relative;
+    margin-bottom: 6px;
+}
+.terrain li:before {
+    content: counter(item) " "; /* Generates the number and a space */
+    counter-increment: item;   /* Increments the counter for the next item */
+    font-weight: bold;         /* Optional: styles the number */
+    margin-right: 2.5em;       /* Optional: adds space between the number and text */
+}
 
+.backNumbers.btnGradient {
+    position: relative;
+    float: left;
+    flex: 0;
+    left: 24px;
+    z-index: 0;
+    margin: 0;
+    padding: 0px 20px;
+    background-image: linear-gradient(to top, #E22211 -18%, #E7AD03 62%, #F4AD03 100%);
+}
+.grayCircle {    
+    background: #5e5e5e;
+    border-radius: 100%;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    align-items: anchor-center;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 10px;
+}
+.recipe .col {
+    justify-items: center;
+}
 
+button.btn01 { margin: 10px 0; max-width: 100%; }
+.section1 .left { align-content: center; }
 .section1 .flex3 { display: none; }
 .header .name, .divMenu .logo {font-weight: 600;margin: 0;cursor: initial;background: url(../images/logo.png);width: 122px;height: 51px;background-size: contain;background-repeat: no-repeat;margin-top: 10px;display: inline-block;/* float: left; */position: absolute;}
 .header span {margin: 0px 10px;line-height: 61px;cursor: pointer;height: 47px;font-weight: 700;}
@@ -849,10 +897,7 @@ body > .footer p {}
 }
 
 @media (min-width:1200px)  {
-    .section1 .left {
-        margin-top: 115px;
-        display: none;
-    }
+    
     .section1 .line1 { display: flex; }
     .section1 {
     padding: 130px 0px 15px 40px; }
