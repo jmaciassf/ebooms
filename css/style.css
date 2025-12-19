@@ -656,6 +656,8 @@ body > .footer p {}
 #imgDPM {background-image: url("../images/DMP.png");margin: 0;height: 20px;top: -15px;width: 95px;}
 #imgMaitacon {background-image: url("../images/MAITACON.png");margin-top: 10px;height: 22px;width: 150px;top: -12px;margin-right: 7px;}
 #imgFoton {background-image: url("../images/FOTON2.png");height: 50px;width: 150px;top: 3px;}
+#imgExpress57 {background-image: url("../images/express57.png");height: 35px;width: 135px;top: -13px;}
+#imgCamionesExpress {background-image: url("../images/camionesExpress.png");height: 45px;width: 135px;top: -9px;}
 .section1 .line2 .image:first-child { margin-left: 0; }
 .section1 .line2 .image:last-child { margin-right: 0; }
 .titleYellow {
