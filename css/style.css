@@ -44,6 +44,9 @@ body {
  margin-right: 20px;
  }
 .header {background-color: white;/* height: 50px; */padding: 5px 10px;font-size: 13px;color: black;/* position: fixed; *//* width: 100%; */}
+.privacy .header {
+    min-height: 57px;
+}
 .flex {display: flex;}
 .flex1 { flex: 1; }
 .flex2 { flex: 2; }
