@@ -184,9 +184,9 @@ function resize() {
     $(".step3 .bomb").css("marginTop", $(".step3 .box").height() / 2 - 30);
     //$(".steps").css("marginBottom", $(".step3 .box").height() / 2 - 30);
 
-    positions.section2 = $(".divSection2").position().top - 450;
-    positions.reserve = $(".divReserve").position().top - 450;
-    positions.aboutUs = $(".aboutUs").position().top - 450;
+    positions.section2 = $(".divSection2").position()?.top - 450;
+    positions.reserve = $(".divReserve").position()?.top - 450;
+    positions.aboutUs = $(".aboutUs").position()?.top - 450;
     
 }
 
